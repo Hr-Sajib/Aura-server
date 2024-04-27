@@ -1,0 +1,113 @@
+[
+    {
+      "name": "Mountain View Canvas",
+      "category": "Landscape Painting",
+      "price": 200,
+      "rating": 4.7,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/w6G6JBy/Mountain-View-Canvas.jpg",
+      "processingTime": "2-3 weeks",
+      "description": "A breathtaking landscape painting capturing the majestic beauty of mountains.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Forest Landscape Painting",
+      "category": "Landscape Painting",
+      "price": 180,
+      "rating": 4.5,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/JjbN27T/Forest-Landscape-Painting.jpg",
+      "processingTime": "2 weeks",
+      "description": "An enchanting landscape painting depicting the serenity of a forest.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Pencil Sketch Portrait",
+      "category": "Portrait Drawing",
+      "price": 120,
+      "rating": 4.6,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/s5HgjT1/Pencil-Sketch-Portrait.png",
+      "processingTime": "1 week",
+      "description": "A classic pencil sketch portrait capturing the essence of the subject.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Ink Outline Portrait",
+      "category": "Portrait Drawing",
+      "price": 150,
+      "rating": 4.8,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/DWxnpX2/Ink-Outline-Portrait.png",
+      "processingTime": "1-2 weeks",
+      "description": "A striking ink outline portrait with bold lines and intricate details.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Floral Watercolor Art",
+      "category": "Watercolour Painting",
+      "price": 100,
+      "rating": 4.3,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/vXdYN4j/Floral-Watercolor-Art.jpg",
+      "processingTime": "1-2 weeks",
+      "description": "A vibrant floral watercolor artwork showcasing the beauty of flowers.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Animal Watercolor Portrait",
+      "category": "Watercolour Painting",
+      "price": 130,
+      "rating": 4.4,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/ykG4dVv/Animal-Watercolor-Portrait.jpg",
+      "processingTime": "1-2 weeks",
+      "description": "A charming watercolor portrait capturing the likeness of a beloved pet.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Realistic Oil Portrait",
+      "category": "Oil Painting",
+      "price": 250,
+      "rating": 4.9,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/N36g92b/Realistic-Oil-Portrait.jpg",
+      "processingTime": "2-3 weeks",
+      "description": "An exquisite oil portrait with lifelike details and realistic rendering.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Abstract Oil Painting",
+      "category": "Oil Painting",
+      "price": 220,
+      "rating": 4.5,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/wpwQZg6/Abstract-Oil-Painting.jpg",
+      "processingTime": "2 weeks",
+      "description": "A captivating abstract oil painting with bold strokes and vibrant colors.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Figure Charcoal Sketch",
+      "category": "Charcoal Sketching",
+      "price": 90,
+      "rating": 4.2,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/9TyrSKL/Figure-Charcoal-Sketch.jpg",
+      "processingTime": "1 week",
+      "description": "An expressive charcoal sketch capturing the beauty of human figure.",
+      "stockStatus": "In stock"
+    },
+    {
+      "name": "Comic Strip Drawing",
+      "category": "Cartoon Drawing",
+      "price": 80,
+      "rating": 4.0,
+      "customization": "Customizable",
+      "imageUrl": "https://i.ibb.co/stZqZyj/Comic-Strip-Drawing.jpg",
+      "processingTime": "1 week",
+      "description": "A fun and whimsical comic strip drawing with engaging characters and storyline.",
+      "stockStatus": "In stock"
+    }
+  ]
+  

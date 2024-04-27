@@ -25,7 +25,7 @@ app.get('/',(req,res)=>{
 
 
 
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const uri = "mongodb+srv://Aura-arts:jUAEdU9yQDBA8HHm@cluster-sajib.cqfdgne.mongodb.net/?retryWrites=true&w=majority";
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
@@ -49,6 +49,8 @@ async function run() {
     const artCollection = client.db('artsDB').collection('arts');
 
 
+
+    //add arts
     app.post('/addart',async(req,res)=>{
         const art = req.body;
         console.log(art);
@@ -57,6 +59,40 @@ async function run() {
         res.send(result);
     })
 
+
+
+
+
+    //get all arts
+    app.get('/getarts',async(req,res)=>{
+        const cursor = artCollection.find();
+        const result = await cursor.toArray();
+        res.send(result);
+    })
+
+    //get specific art
+    app.get('/getart/:id', async(req,res)=>{
+        const id = req.params.id;
+        
+        const query = { _id: new ObjectId(id)};
+        const result =  await artCollection.findOne(query);
+
+        res.send(result);
+
+    })
+
+
+    //get own arts 
+    app.get('/getMyArts/:mail', async(req,res)=>{
+        const userMail = req.params.mail;
+
+        console.log(userMail);
+
+        const query = {userEmail : userMail};
+
+        const result = artCollection.find(query)
+        res.send(result);
+    })
 
 
 
