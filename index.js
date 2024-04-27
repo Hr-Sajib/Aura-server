@@ -96,19 +96,44 @@ async function run() {
     })
 
 
-
-
-
-
     //delete own art
-    app.delete('/getMyArts/delete/:id', async(req,res)=>{
+    app.delete('/delete/:id', async(req,res)=>{
         const id = req.params.id;
         
         const query = {_id: new ObjectId(id)};
 
         const result = await artCollection.deleteOne(query);
         res.send(result);
-        
+
+    })
+
+
+    //update own art
+    app.put('/update/:id', async(req,res)=>{
+        const id = req.params.id;
+        const art = req.body;
+
+        const query = {_id: new ObjectId(id)};
+
+        const updatedArt = {
+            $set:{
+                name : art.name ,
+                category : art.category ,
+                price : art.price ,
+                rating : art.rating ,
+                customization : art.customization ,
+                imageurl : art.imageurl ,
+                processingTime : art.processingTime ,
+                description : art.description ,
+                stockStatus : art.stockStatus ,
+            }
+        }
+
+        const options ={ upsert : true};
+
+        const result = await artCollection.updateOne(query, updatedArt, options );
+        res.send(result);
+
     })
 
 
