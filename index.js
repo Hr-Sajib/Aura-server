@@ -82,16 +82,33 @@ async function run() {
     })
 
 
+
+    
+
     //get own arts 
     app.get('/getMyArts/:mail', async(req,res)=>{
         const userMail = req.params.mail;
-
-        console.log(userMail);
-
         const query = {userEmail : userMail};
 
-        const result = artCollection.find(query)
+        const result =  artCollection.find(query);
+        const r = await result.toArray();
+        res.send(r);
+    })
+
+
+
+
+
+
+    //delete own art
+    app.delete('/getMyArts/delete/:id', async(req,res)=>{
+        const id = req.params.id;
+        
+        const query = {_id: new ObjectId(id)};
+
+        const result = await artCollection.deleteOne(query);
         res.send(result);
+        
     })
 
 
