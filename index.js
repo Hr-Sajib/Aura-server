@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+require('dotenv').config()
+
 
 const app = express();
 const port = process.env.PORT || 5500;
@@ -26,7 +28,7 @@ app.get('/',(req,res)=>{
 
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = "mongodb+srv://Aura-arts:jUAEdU9yQDBA8HHm@cluster-sajib.cqfdgne.mongodb.net/?retryWrites=true&w=majority";
+const uri = `mongodb+srv://${process.env.db_user}:${process.env.db_password}@cluster-sajib.cqfdgne.mongodb.net/?retryWrites=true&w=majority`;
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -82,7 +84,7 @@ async function run() {
    app.post('/postCategories', async(req,res)=>{
         const cats = req.body;
 
-        console.log(cats);
+        // console.log(cats);
 
         const refresh = await categoriesCollection.deleteMany();
         let result ;
